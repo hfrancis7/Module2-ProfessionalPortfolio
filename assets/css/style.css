@@ -1,47 +1,67 @@
+/*variable*/
 :root{
     --lavender: rgb(230,230,250);
     --purple1: #76479c;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/*Purple Galaxy Header containing name + nav bar */
 header{
     padding: 20px;
-    font-family: 'Lucida Handwriting', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--purple1);
-    color: #ffffff;
+    background-image: url("../images/purpleGalaxy.jpg");
+    color: white;
 }
 
+/*"Hailey D. Francis written on top left*/
 header h1 {
     display: inline-block;
+    background-color: white;
+    font-family: 'Lucida Handwriting', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    border-radius: 10px;
     font-size: 36px;
+    color: indigo;
 }
 
+/*Nav Bar properties*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;    
     font-size: 20px;
 }
 
+/*Nav bar unordered list properties*/
 header nav ul {
     list-style-type: none;
 }
 
+/*Nav bar list element properties */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+/*Nav bar anchor tag text decoration and color */
+header nav ul li a {
+    color: white;
+    text-decoration: underline;
 }
 
+/* setting background color background */
 body{
     background-color: var(--lavender);
+}
+
+h2{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;  
 }
