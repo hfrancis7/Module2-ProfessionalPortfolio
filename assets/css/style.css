@@ -79,6 +79,14 @@ h2{
 div{
     margin: 30px;
     justify-content: center;
+    position: relative;
+}
+
+
+div figure h3{
+    background-color: var(--purple1);
+    /* position: absolute; */
+
 }
 
 p{
@@ -110,11 +118,23 @@ footer{
     width: 100%;
     border: 7px solid var(--purple1);
     border-radius: 5px;
-    position: relative;
 }
 
-.work:hover{
-    
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left{
+    position:absolute;
+    bottom: 2%;
+    left: 0%;
+}
+
+.label{
+    padding: 5px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 837px) {
@@ -122,6 +142,15 @@ footer{
     header {
         padding: 50px;
         text-align: center;
+    }
+
+    h2{
+        margin-left: 1%;
+        font-size: 30px;
+    }
+
+    section div{
+        margin-left: 2%;
     }
 
     /*Turning list into columns*/
