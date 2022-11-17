@@ -4,7 +4,7 @@ This website contains some information about myself and will serve as a place fo
 It also contains multiple ways to contact me.
 
 ## Live Link
-TBA
+https://hfrancis7.github.io/Module2-ProfessionalPortfolio/
 
 ## User Story
 ```
