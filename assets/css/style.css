@@ -77,15 +77,16 @@ h2{
     text-align: right;
 }
 
-section div figure h3{
-    font-size: 25px;
-}
-
 /* Content placement of info in About Me, Work, and Contact Me Section */
 div{
     margin: 30px;
     justify-content: center;
     position: relative;
+}
+
+/*labels on work images font size*/
+section div figure h3{
+    font-size: 25px;
 }
 
 /*label on images in work */
@@ -103,7 +104,7 @@ div figure a img{
     margin: 5px;
 }
 
-
+/*stylizing p font*/
 p{
     font-size: 16px;
     margin-bottom: 10px;
@@ -122,10 +123,7 @@ footer{
     display: flex;
 }
 
-.wrap{
-    flex-wrap: wrap;
-}
-
+/* profile pic sizing and placement */
 .profile{
     width: 150px;
     margin: auto;
@@ -133,18 +131,21 @@ footer{
     padding-top: 10px;
 }
 
+/*work images border and size, used width 100% for all because label placement was a struggle */
 .work{
     width: 100%;
     border: 7px solid var(--purple1);
     border-radius: 5px;
 }
 
+/*Container class for text*/
 .container{
     position: relative;
     text-align: center;
     color: white;
 }
 
+/*placing text on bottom left */
 .bottom-left{
     position: absolute;
     bottom: 9px;
@@ -152,11 +153,13 @@ footer{
     border-radius: 5px;
 }
 
+/*image label stylizing */
 .label{
     padding: 5px;
     display: inline-block;
 }
 
+/*layout for narrower screens*/
 @media screen and (max-width: 837px) {
     /* Space background expanded, text centered */
     header {
@@ -164,11 +167,18 @@ footer{
         text-align: center;
     }
 
+    /*made h2 text smaller*/
     h2{
         margin-left: 1%;
         font-size: 30px;
     }
 
+    /*made div margins smaller*/
+    div{
+        margin: 15px;
+    }
+    
+    /*made margin in between label and info of each section smaller */
     section div{
         margin-left: 2%;
     }
@@ -184,15 +194,9 @@ footer{
         float:unset;
     }
 
+    /*made image label text smaller*/
     section div figure h3{
         font-size: 15px;
     }
-
-    div{
-        margin: 15px;
-        justify-content: center;
-        position: relative;
-    }
-
 
   }
