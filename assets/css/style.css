@@ -8,12 +8,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /*Purple Galaxy Header containing name + nav bar */
 header{
-    padding: 20px;
+    display: inline-box;
+    padding: 30px;
     background-image: url("../images/purpleGalaxy.jpg");
     color: white;
+    width:100%;
 }
 
 /*"Hailey D. Francis written on top left*/
@@ -22,6 +26,7 @@ header h1 {
     background-color: white;
     font-family: 'Lucida Handwriting', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 15px;
+    margin: 10px;
     border-radius: 10px;
     font-size: 36px;
     color: indigo;
@@ -33,7 +38,6 @@ header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;    
     font-size: 20px;
 }
@@ -43,8 +47,8 @@ header nav ul {
     list-style-type: none;
 }
 
-/*Nav bar list element properties */
-header nav ul li {
+/*Lining up list elements inline-block*/
+li{
     display: inline-block;
     margin-left: 25px;
 }
@@ -62,34 +66,73 @@ body{
 
 /*The About Me, Work, And Contact Me Headers */
 h2{
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    border-right: 2px solid var(--purple1);
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin:30px;
+    border-right: 5px solid var(--purple1);
+    text-align: right;
 }
 
+/* Content placement of info in About Me, Work, and Contact Me Section */
 div{
+    margin: 30px;
+    justify-content: center;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    line-height: 1.2;
     
 }
 
+/*Placing everything in the center with the footer */
 footer{
     text-align: center;
 }
 
+/*Adding the flex property, used on "section" class to line up label and info side by side */
 .flex{
     display: flex;
 }
 
-@media screen and (max-width: 779px) {
+.profile{
+    width: 150px;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+}
+
+.work{
+    width: 100%;
+    border: 7px solid var(--purple1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.work:hover{
+    
+}
+
+@media screen and (max-width: 837px) {
     /* Space background expanded, text centered */
     header {
         padding: 50px;
         text-align: center;
     }
 
+    /*Turning list into columns*/
+    li{
+        display: block;
+        margin-left: 25px;
+    }
+
     /*Nav Bar unset float so text-align center is used*/
     header nav {
         float:unset;
     }
+
   }
