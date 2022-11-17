@@ -49,6 +49,8 @@ header nav ul {
 
 /*Lining up list elements inline-block*/
 li{
+    padding: 1px;
+    margin-top: 10px;
     display: inline-block;
     margin-left: 25px;
 }
@@ -75,6 +77,10 @@ h2{
     text-align: right;
 }
 
+section div figure h3{
+    font-size: 25px;
+}
+
 /* Content placement of info in About Me, Work, and Contact Me Section */
 div{
     margin: 30px;
@@ -82,12 +88,21 @@ div{
     position: relative;
 }
 
-
+/*label on images in work */
 div figure h3{
     background-color: var(--purple1);
-    /* position: absolute; */
+    font-size: 15px;
 
 }
+
+/*Work Images */
+div figure a img{
+    width: 100%;
+    border: 10px solid var(--purple1);
+    border-radius: 5px;
+    margin: 5px;
+}
+
 
 p{
     font-size: 16px;
@@ -105,6 +120,10 @@ footer{
 /*Adding the flex property, used on "section" class to line up label and info side by side */
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .profile{
@@ -127,9 +146,10 @@ footer{
 }
 
 .bottom-left{
-    position:absolute;
-    bottom: 2%;
-    left: 0%;
+    position: absolute;
+    bottom: 9px;
+    left: 5px;
+    border-radius: 5px;
 }
 
 .label{
@@ -154,7 +174,7 @@ footer{
     }
 
     /*Turning list into columns*/
-    li{
+    header nav ul li{
         display: block;
         margin-left: 25px;
     }
@@ -163,5 +183,16 @@ footer{
     header nav {
         float:unset;
     }
+
+    section div figure h3{
+        font-size: 15px;
+    }
+
+    div{
+        margin: 15px;
+        justify-content: center;
+        position: relative;
+    }
+
 
   }
