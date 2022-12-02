@@ -29,5 +29,9 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
-*Images in the work section are all the same size, will look into fixing in the future
+*Images in the work section currently all same size
 
+## Issues / Future Changes
+- Sections of my style.css are directly targetting tags, which created multiple unexpected behaviors and overrides of the style sheet. On this and future projects, will try not to html tags directly in favor of using classes and IDs for easier to read/write UI
+  - Border line on "About Me", "Work", and "Contact Me" will line up
+  - Work images will flex properly, with the size of the first image being larger than the others (likely 50% larger) in a grid layout
