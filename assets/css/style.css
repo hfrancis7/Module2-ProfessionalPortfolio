@@ -11,8 +11,13 @@
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* setting background color */
+body{
+    background-color: var(--lavender);
+}
+
 /*Purple Galaxy Header containing name + nav bar */
-header{
+.purple-galaxy{
     display: inline-box;
     padding: 30px;
     background-image: url("../images/purpleGalaxy.jpg");
@@ -21,7 +26,7 @@ header{
 }
 
 /*"Hailey D. Francis written on top left*/
-header h1 {
+.my-name {
     display: inline-block;
     background-color: white;
     font-family: 'Lucida Handwriting', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,7 +39,7 @@ header h1 {
 }
 
 /*Nav Bar properties*/
-header nav {
+.header-nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -43,7 +48,7 @@ header nav {
 }
 
 /*Nav bar unordered list properties, remove bullet points*/
-header nav ul {
+.nav-list-style {
     list-style-type: none;
 }
 
@@ -56,18 +61,15 @@ li{
 }
 
 /*Nav bar anchor tag text decoration and color */
-header nav ul li a {
+.nav-link-style {
     color: white;
     text-decoration: underline;
 }
 
-/* setting background color */
-body{
-    background-color: var(--lavender);
-}
+
 
 /*The About Me, Work, And Contact Me Headers */
-h2{
+.main-headers{
     font-weight: bold;
     font-size: 40px;
     padding-left: 20px;
@@ -78,7 +80,7 @@ h2{
 }
 
 /* Content placement of info in About Me, Work, and Contact Me Section */
-div{
+.spacing{
     margin: 30px;
     justify-content: center;
     position: relative;
