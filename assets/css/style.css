@@ -16,6 +16,15 @@ body{
     background-color: var(--lavender);
 }
 
+/*stylizing p font*/
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    line-height: 1.2;
+    
+}
+
 /*Purple Galaxy Header containing name + nav bar */
 .purple-galaxy{
     display: inline-box;
@@ -91,28 +100,12 @@ section div figure h3{
     font-size: 25px;
 }
 
-/*label on images in work */
-div figure h3{
-    background-color: var(--purple1);
-    font-size: 15px;
-
-}
-
 /*Work Images */
-div figure a img{
+.project-img{
     width: 100%;
     border: 10px solid var(--purple1);
     border-radius: 5px;
     margin: 5px;
-}
-
-/*stylizing p font*/
-p{
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-right: 10%;
-    line-height: 1.2;
-    
 }
 
 /*Placing everything in the center with the footer */
@@ -159,6 +152,8 @@ footer{
 .label{
     padding: 5px;
     display: inline-block;
+    background-color: var(--purple1);
+    font-size: 15px;
 }
 
 /*layout for narrower screens*/
