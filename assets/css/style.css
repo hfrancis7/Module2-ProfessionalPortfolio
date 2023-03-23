@@ -30,6 +30,7 @@ p{
     display: inline-box;
     padding: 30px;
     background-image: url("../images/purpleGalaxy.jpg");
+    background-size: cover;
     color: white;
     width:100%;
 }
@@ -81,10 +82,7 @@ li{
 .main-headers{
     font-weight: bold;
     font-size: 40px;
-    padding-left: 20px;
-    padding-right: 10px;
     margin:30px;
-    border-right: 5px solid var(--purple1);
     text-align: right;
 }
 
@@ -116,19 +114,21 @@ footer{
 /*Adding the flex property, used on "section" class to line up label and info side by side */
 .flex-column{
     display: flex;
-    border: 2px solid blue;
     flex-direction: column;
+    justify-content: center;
 }
 
 .grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    width: 100%;
+    row-gap: 30px;
 }
 
 .grid-item-AboutMe{
     grid-row: 1;
     grid-column: 1;
+    border-right: 5px solid var(--purple1);
 }
 
 .grid-item-AboutMeInfo{
@@ -139,6 +139,7 @@ footer{
 .grid-item-Work{
     grid-row: 2;
     grid-column: 1;
+    border-right: 5px solid var(--purple1);
 }
 
 .grid-item-WorkInfo{
@@ -149,6 +150,7 @@ footer{
 .grid-item-ContactMe{
     grid-row: 3;
     grid-column: 1;
+    border-right: 5px solid var(--purple1);
 }
 
 .grid-item-ContactMeInfo{
@@ -212,10 +214,11 @@ footer{
     div{
         margin: 15px;
     }
-    
-    /*made margin in between label and info of each section smaller */
-    section div{
-        margin-left: 2%;
+
+    .main-headers{
+        font-size: 40px;
+        margin:10px;
+        text-align: right;
     }
 
     /*Turning list into columns*/
