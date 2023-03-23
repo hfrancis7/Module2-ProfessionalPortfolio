@@ -32,7 +32,6 @@ p{
     background-image: url("../images/purpleGalaxy.jpg");
     background-size: cover;
     color: white;
-    width:100%;
 }
 
 /*"Hailey D. Francis written on top left*/
@@ -88,7 +87,6 @@ li{
 
 /* Content placement of info in About Me, Work, and Contact Me Section */
 .spacing{
-    margin: 30px;
     justify-content: center;
     position: relative;
 }
@@ -121,7 +119,6 @@ footer{
 .grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 100%;
     row-gap: 30px;
 }
 
@@ -204,27 +201,21 @@ footer{
         text-align: center;
     }
 
-    /*made h2 text smaller*/
-    h2{
-        margin-left: 1%;
-        font-size: 30px;
-    }
-
     /*made div margins smaller*/
     div{
         margin: 15px;
     }
 
     .main-headers{
-        font-size: 40px;
-        margin:10px;
+        font-size: 25px;
+        margin:5px;
+        margin-right: 10px;
         text-align: right;
     }
 
     /*Turning list into columns*/
     .flex-adjust{
         display: block;
-        margin-left: 25px;
     }
 
     /*Nav Bar unset float so text-align center is used*/
@@ -232,9 +223,38 @@ footer{
         float:unset;
     }
 
-    /*made image label text smaller*/
-    section div figure h3{
-        font-size: 15px;
+    .grid-item-AboutMe{
+        border-right: none;
+        border-bottom: 5px solid var(--purple1);
     }
 
+    .grid-item-AboutMeInfo{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .grid-item-Work{
+        grid-row: 3;
+        grid-column: 1;
+        border-right: none;
+        border-bottom: 5px solid var(--purple1);
+    }
+
+    .grid-item-WorkInfo{
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    .grid-item-ContactMe{
+        grid-row: 5;
+        grid-column: 1;
+        border-right: none;
+        border-bottom: 5px solid var(--purple1);
+    }
+
+    .grid-item-ContactMeInfo{
+        grid-row: 6;
+        grid-column: 1;
+    }
+    
   }
