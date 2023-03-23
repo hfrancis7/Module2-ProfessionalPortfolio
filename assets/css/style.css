@@ -27,7 +27,7 @@ p{
 
 /*Purple Galaxy Header containing name + nav bar */
 .purple-galaxy{
-    display: inline-box;
+    display: block;
     padding: 30px;
     background-image: url("../images/purpleGalaxy.jpg");
     background-size: cover;
@@ -87,8 +87,7 @@ li{
 
 /* Content placement of info in About Me, Work, and Contact Me Section */
 .spacing{
-    justify-content: center;
-    position: relative;
+    margin-left: 30px;
 }
 
 /*labels on work images font size*/
@@ -98,7 +97,7 @@ section div figure h3{
 
 /*Work Images */
 .project-img{
-    width: 100%;
+    width: 80%;
     border: 10px solid var(--purple1);
     border-radius: 5px;
     margin: 5px;
@@ -155,12 +154,15 @@ footer{
     grid-column: 2;
 }
 
+.profile-pic-container{
+    display: flex;
+    justify-content: center;
+}
 /* profile pic sizing and placement */
 .profile{
-    width: 150px;
-    margin: auto;
+    width: 200px;
     display: block;
-    padding-top: 10px;
+    margin: 30px;
 }
 
 /*work images border and size, used width 100% for all because label placement was a struggle */
