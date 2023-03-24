@@ -197,9 +197,11 @@ section div figure h3{
 /*image label stylizing */
 .label{
     padding: 5px;
-    display: inline-block;
     background-color: var(--purple1);
-    font-size: 15px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    left: 10%;
 }
 
 /*layout for narrower screens*/
@@ -225,6 +227,30 @@ section div figure h3{
     /*Nav Bar unset float so text-align center is used*/
     .header-nav{
         float:unset;
+    }
+
+    .label{
+        padding: 5px;
+        font-size: 20px;
+        position: absolute;
+        bottom: 8px;
+        left: 0%;
+    }
+
+    /*Work Images */
+    .project-img{
+        width: 100%;
+        border-radius: 5px;
+        margin: 0px;
+    }
+
+    .spacing{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .container{
+        margin-bottom: 10px;
     }
 
     /*Replace About me title location in grid */
